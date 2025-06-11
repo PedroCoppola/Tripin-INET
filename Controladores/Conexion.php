@@ -1,9 +1,12 @@
 <?php
-
+            $Direccion= new mysqli("localhost","root","","tripin");
+            $Direccion -> set_charset("utf8mb4");
 class Conexion {
     private static $conexion;
 
     public static function getConexion() {
+
+
         if (!isset(self::$conexion)) {
             try {
                 $host = 'localhost';
