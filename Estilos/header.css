@@ -1,0 +1,93 @@
+/* header.css */
+
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #111;
+    line-height: 1; 
+    
+}
+
+.logo img {
+    width: 60px;
+    height: 60px; 
+    object-fit: contain;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.68s;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.btn.book {
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.68s;
+}
+
+.btn.book:hover {
+    background-color: #0158b4;
+    color: #fff;
+}
+
+.btn.sign {
+    background-color: #e5e5e5;
+    color: #111;
+    transition: 0.68s;
+}
+
+.btn.sign:hover {
+    filter: brightness(85%);
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre links y botones */
+}
