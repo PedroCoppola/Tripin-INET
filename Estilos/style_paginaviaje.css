@@ -1,0 +1,345 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Main Product Display Section */
+.main-product-display {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    /* Added for consistent spacing with the example image */
+    padding-right: 20px;
+}
+
+.product-image-container {
+    flex: 1;
+    min-width: 50%; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-details {
+    flex: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.special-offer-tag {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 2.2em;
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.product-description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.product-price-info {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: baseline;
+}
+
+.current-price {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.original-price {
+    font-size: 1.2em;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.whats-included {
+    margin-bottom: 30px;
+}
+
+.whats-included h3 {
+    font-size: 1.1em;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.whats-included ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.whats-included ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.whats-included ul li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.book-now-button,
+.add-to-wishlist-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.book-now-button:hover {
+    background-color: #0056b3;
+}
+
+.add-to-wishlist-button {
+    background-color: #81f7b6;
+    color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+.add-to-wishlist-button:hover {
+    background-color: #e0e0e0;
+}
+
+.book-now-button img,
+.add-to-wishlist-button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%); /* Adjust icon color for white background */
+}
+
+.add-to-wishlist-button img {
+    filter: none; /* Keep original icon color for grey background */
+}
+
+
+/* You Might Also Like Section */
+.you-might-also-like {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.you-might-also-like h2 {
+    font-size: 1.8em;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.recommended-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    height: 40px; /* Ensure consistent height for descriptions */
+    overflow: hidden;
+}
+
+.card-price-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.view-details {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.view-details:hover {
+    color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .main-product-display {
+        flex-direction: column;
+        margin: 20px auto;
+        padding-right: 0;
+    }
+
+    .product-image-container {
+        min-width: 100%;
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .product-details {
+        padding: 25px;
+    }
+
+    .product-title {
+        font-size: 1.8em;
+    }
+
+    .current-price {
+        font-size: 1.8em;
+    }
+
+    .you-might-also-like {
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-product-display {
+        margin: 15px;
+    }
+
+    .product-details {
+        padding: 20px;
+    }
+
+    .product-title {
+        font-size: 1.5em;
+    }
+
+    .current-price {
+        font-size: 1.5em;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .book-now-button,
+    .add-to-wishlist-button {
+        width: 100%;
+    }
+
+    .you-might-also-like {
+        padding: 0 15px;
+    }
+
+    .recommended-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 1.3em;
+    }
+    .product-description {
+        font-size: 0.9em;
+    }
+    .current-price {
+        font-size: 1.3em;
+    }
+    .original-price {
+        font-size: 1em;
+    }
+    .whats-included ul li {
+        font-size: 0.9em;
+    }
+    .book-now-button,
+    .add-to-wishlist-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}

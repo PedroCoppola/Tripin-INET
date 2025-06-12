@@ -6,15 +6,15 @@
     }
 
     body {
-        background-color: #f9f9f9;
         color: #333;
+            background: radial-gradient(circle at center, #ffffff 0%, #f7fbfe 40%, #e1f1fd 100%);
+
     }
 
     .banner {
         display: flex;
         justify-content: center;
         padding: 90px 20px;
-        background-color: #f9f9f9;
     }
 
     .banner-content {
@@ -171,7 +171,6 @@
     .popular-card {
         background-color: #ffffff;
         border-radius: 12px;
-        box-shadow: 0 6px 15px rgba(70, 99, 172, 0.2);
         overflow: hidden;
         width: 100%;
         max-width: 250px;

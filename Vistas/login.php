@@ -7,6 +7,8 @@
 </head>
 <body>
 
+<img src="../Img/logo.jpg">
+<h1>Tripin</h1>
 
 <div class="contenedor-login">
     <div class="tabs">

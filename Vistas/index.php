@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tripin</title>
     <link rel="stylesheet" href="../Estilos/style_index.css" />
+
 </head>
 <body>
 
@@ -76,6 +77,6 @@
     </div>
 </section>
 
-
+<?php include 'footer.php'; ?>
 </body>
 </html>

@@ -1,0 +1,60 @@
+footer {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    background-color: #f8f8f8; /* Light background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: white;
+    padding: 30px 0;
+    text-align: center;
+    color: #6c757d; /* Muted grey for text */
+    font-size: 14px;
+    border-top: 1px solid #e0e0e0; /* Optional: subtle top border */
+}
+
+.footer-links {
+    margin-bottom: 20px;
+        display: flex;
+
+}
+
+.footer-links a {
+    color: #8c9cb7; /* Light blue-grey as seen in the image */
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #5a6b8c; /* Slightly darker on hover */
+}
+
+.footer-social {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.footer-social a {
+    color: #8c9cb7; /* Light blue-grey for icons */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #5a6b8c; /* Slightly darker on hover */
+}
+
+.footer-copyright {
+    color: #8c9cb7; /* Light blue-grey for copyright text */
+
+}
