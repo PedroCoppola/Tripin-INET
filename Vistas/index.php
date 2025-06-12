@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="../Estilos/style_index.css" />
 </head>
 <body>
-    <header class="banner">
-        <div class="banner-content">
-            <h1>¡Explora el mundo con Trippin!</h1>
-            <p> Descubre paquetes de viaje seleccionados a los destinos más impresionantes. Tu aventura te espera.</p>
-            <button>Encuentra un viaje</button>
-        </div>
-    </header>
+    <?php include 'header.php'; ?>
+   <header class="banner">
+    <div class="banner-content">
+        <h1>¡Explora el mundo con Trippin!</h1>
+        <p>Descubre paquetes de viaje seleccionados a los destinos más impresionantes. Tu aventura te espera.</p>
+        <button>Encuentra un viaje</button>
+    </div>
+</header>
 
    <section class="featured">
-    <h2>Featured Trips</h2>
+    <div class="section-title">
+        <h2>Featured Trips</h2>
+    </div>
     <div class="card-row">
         <div class="card">
             <img src="../img/featured/paris.jpg" alt="Featured1">
@@ -37,7 +40,9 @@
 </section>
 
     <section class="popular">
-        <h2>Popular Destinations</h2>
+        <div class="section-title">
+            <h2>Popular Destinations</h2>
+        </div>
         <div class="grid">
             <div class="grid-item">Paris</div>
             <div class="grid-item">Rome</div>
