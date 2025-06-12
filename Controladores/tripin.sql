@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 12-06-2025 a las 06:19:58
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -90,6 +82,7 @@ CREATE TABLE `productos` (
   `en_oferta` tinyint(1) DEFAULT 0,
   `descuento` decimal(5,2) DEFAULT 0.00,
   `stock` int(11) DEFAULT NULL,
+<<<<<<< HEAD
   `fecha_alta` datetime DEFAULT current_timestamp(),
   `imagen` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -111,6 +104,11 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `en_oferta`, `
 (10, 'Escapada Romántica en Tigre', '2 noches en lodge con vista al río y cena gourmet.', 72000.00, 1, 10.00, 6, '2025-06-11 21:43:56', 'tigre.jpg'),
 (11, 'Paquete Iguazú Premium', 'Vuelos + 5 noches en hotel 4 estrellas con piscina.', 125000.00, 0, 0.00, 7, '2025-06-11 21:43:56', 'iguazu.jpg');
 
+=======
+  `fecha_alta` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+>>>>>>> bda5a00c540c0e025bebb074e0608774ec3f8b50
 -- --------------------------------------------------------
 
 --
@@ -212,7 +210,11 @@ ALTER TABLE `pedidos`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+>>>>>>> bda5a00c540c0e025bebb074e0608774ec3f8b50
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
