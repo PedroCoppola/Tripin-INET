@@ -12,14 +12,14 @@
     <footer class="footer">
         <div class="footer-links">
             <a href="sobrenosotros.php">Nosotros</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="contacto.php">Contacto</a>
+            <a href="polypriv.php">Políticas De Privacidad</a>
+            <a href="termyserv.php">Terminos De Servicio</a>
         </div>
         <div class="footer-social">
             <a href="#"><i class="fas fa-arrow-up"></i></a> <a href="#"><i class="fas fa-th-list"></i></a> <a href="#"><i class="fas fa-info-circle"></i></a> </div>
         <div class="footer-copyright">
-            ©2024 Tripin. All rights reserved.
+            ©2025 Tripin. All rights reserved.
         </div>
     </footer>
 

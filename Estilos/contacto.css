@@ -1,0 +1,317 @@
+/* General Body and Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px; /* Horizontal padding for responsiveness */
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Header Styles (similar to "Sobre Nosotros" page) */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #007bff; /* Blue brand color */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #007bff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.sign-in {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.sign-in:hover {
+    color: #007bff;
+}
+
+/* Get in Touch Section */
+.get-in-touch-section {
+    background-color: #eef7ff; /* Lighter blue background */
+    padding: 80px 0;
+    margin-bottom: 40px;
+}
+
+/* Styles for the inner content of "Get in Touch" to align h1 and p horizontally */
+.get-in-touch-content {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically center h1 and p */
+    gap: 30px; /* Space between h1 and p */
+    text-align: left; /* Align text to the left within their respective "columns" */
+    max-width: 1000px; /* Ensure content adheres to container width */
+    margin: 0 auto; /* Center the content within the section */
+    padding: 0 20px; /* Internal padding for the content, vertical padding comes from .get-in-touch-section */
+}
+
+.get-in-touch-content h1 {
+    font-size: 3em;
+    color: #333;
+    margin: 0; /* Remove default margins for flex control */
+    flex-shrink: 0; /* Prevent the title from shrinking */
+    min-width: 200px; /* Minimum width for the title, adjust as needed */
+    max-width: 250px; /* Maximum width for the title, adjust as needed */
+}
+
+.get-in-touch-content p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0; /* Remove default margins for flex control */
+    flex-grow: 1; /* Allow the paragraph to take up remaining space */
+}
+
+
+/* Contact Form Section */
+.contact-form-section {
+    padding-bottom: 60px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 40px; /* Space between columns */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+}
+
+.form-card, .info-card {
+    padding: 0; 
+    margin-bottom: 35px;
+   
+}
+
+.form-card h2, .info-card h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; /* Ensures padding doesn't increase width */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Information Styling */
+.contact-info-item {
+    display: flex;
+    align-items: flex-start; /* Align icon to top of text */
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.contact-info-item i {
+    font-size: 1.8em;
+    color: #007bff;
+    min-width: 30px; /* Ensure icon has consistent space */
+    text-align: center;
+}
+
+.contact-info-item .text-content h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contact-info-item .text-content p {
+    font-size: 0.95em;
+    color: #777;
+    margin: 0;
+}
+
+.connect-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start; /* Align left */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #f0f2f5; /* Light background for icons */
+    color: #555;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Stack title and paragraph of "Get in Touch" on smaller screens */
+    .get-in-touch-content {
+        flex-direction: column; /* Change to vertical stacking */
+        text-align: center; /* Center text when stacked */
+    }
+    .get-in-touch-content h1 {
+        min-width: unset; /* Remove min-width when stacked */
+        max-width: 100%; /* Allow h1 to take full width when stacked */
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        padding: 25px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center; /* Center social icons on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .get-in-touch-section h1 {
+        font-size: 2em;
+    }
+    .get-in-touch-section p {
+        font-size: 1em;
+    }
+    .contact-grid {
+        padding: 15px;
+    }
+    .form-card h2, .info-card h2 {
+        font-size: 1.5em;
+    }
+}

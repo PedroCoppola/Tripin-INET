@@ -11,7 +11,7 @@
         <div class="right-content">
             <nav class="nav">
                 <a href="#">Lugares</a>
-                <a href="#">Viajes</a>
+                <a href="contacto.php">Contáctanos</a>
                 <a href="sobrenosotros.php">Sobre Nosotros</a>
             </nav>
             <div class="header-buttons">

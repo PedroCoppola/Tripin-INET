@@ -19,7 +19,7 @@
         <section class="container history-section">
             <div class="history-content">
                 <h2>Nuestra Historia</h2>
-                <p>Fundada en [Año de Fundación], TravelEase nació de un amor compartido por la exploración y la aventura. Nos dimos cuenta de que encontrar y acceder a experiencias de viaje excepcionales podía ser un desafío. Comenzamos como un pequeño equipo con grandes sueños y, con el tiempo, hemos crecido hasta convertirnos en un nombre de confianza en la industria de los viajes, ayudando a miles de viajeros a descubrir las maravillas del mundo.</p>
+                <p>Fundada en 2025, Trippin nació de un amor compartido por la exploración y la aventura. Nos dimos cuenta de que encontrar y acceder a experiencias de viaje excepcionales podía ser un desafío. Comenzamos como un pequeño equipo con grandes sueños y, con el tiempo, hemos crecido hasta convertirnos en un nombre de confianza en la industria de los viajes, ayudando a miles de viajeros a descubrir las maravillas del mundo.</p>
                 <p>Desde nuestros inicios, hemos mantenido nuestro compromiso de proporcionar viajes memorables y un servicio al cliente impecable. Cada hito en nuestro viaje refleja nuestra dedicación a nuestros clientes y a la creación de experiencias de viaje fluidas y enriquecedoras.</p>
             </div>
             <div class="history-image">
