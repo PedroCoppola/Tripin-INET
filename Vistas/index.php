@@ -29,7 +29,7 @@
         <?php
         try {
             $conn = Conexion::getConexion();
-            $sql = "SELECT nombre, descripcion, imagen FROM productos ORDER BY RAND() LIMIT 3";
+            $sql = "SELECT id, nombre, descripcion, imagen FROM productos ORDER BY RAND() LIMIT 3";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
             $viajes = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -39,6 +39,7 @@
                 echo '<img src="../img/featured/' . htmlspecialchars($viaje['imagen']) . '" alt="' . htmlspecialchars($viaje['nombre']) . '">';
                 echo '<h1>' . htmlspecialchars($viaje['nombre']) . '</h1>';
                 echo '<p>' . htmlspecialchars($viaje['descripcion']) . '</p>';
+                echo '<a href="producto.php?id=' . urlencode($viaje['id']) . '" class="view-details">Ver más →</a>';
                 echo '</div>';
             }
         } catch (PDOException $e) {

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fa;
+    background: radial-gradient(circle at center, #ffffff 0%, #f7fbfe 40%, #e1f1fd 100%);
     color: #333;
 }
 
@@ -17,6 +17,7 @@ body {
     overflow: hidden;
     /* Added for consistent spacing with the example image */
     padding-right: 20px;
+    
 }
 
 .product-image-container {
@@ -148,13 +149,15 @@ body {
 }
 
 .add-to-wishlist-button {
-    background-color: #81f7b6;
+    background-color: #67db9b;
     color: #ffffff;
     border: 1px solid #ccc;
+    font-weight: 700;
 }
 
 .add-to-wishlist-button:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0;  
+    
 }
 
 .book-now-button img,
