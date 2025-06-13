@@ -11,7 +11,7 @@
 
     <footer class="footer">
         <div class="footer-links">
-            <a href="#">About Us</a>
+            <a href="sobrenosotros.php">Nosotros</a>
             <a href="#">Contact</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

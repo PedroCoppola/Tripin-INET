@@ -12,7 +12,7 @@
             <nav class="nav">
                 <a href="#">Lugares</a>
                 <a href="#">Viajes</a>
-                <a href="#">Sobre Nosotros</a>
+                <a href="sobrenosotros.php">Sobre Nosotros</a>
             </nav>
             <div class="header-buttons">
                 <a href="#" class="btn book">Buscar un viaje</a>

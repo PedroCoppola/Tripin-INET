@@ -1,0 +1,238 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    /* Importante para evitar barras de desplazamiento horizontales de los elementos 100vw */
+    overflow-x: hidden;
+}
+
+/* Contenedor general para contenido que debe estar centrado y tener un ancho máximo */
+.container {
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Padding interno por defecto */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el max-width */
+}
+
+/* Hero Section - Su fondo abarcará el 100% del ancho del viewport */
+.hero-section {
+    background-image: url('../img/AboutUs.jpg'); /* Tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima del overlay */
+
+    /* La magia para el ancho completo del viewport */
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+/* Overlay para la sección hero */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay oscuro para legibilidad del texto */
+    z-index: -1; /* Coloca el overlay detrás del texto */
+}
+
+/* Contenedor de contenido dentro de hero-section para gestionar el padding específico */
+.hero-content-container {
+    padding-top: 80px; /* Padding superior específico para el contenido de hero */
+    padding-bottom: 80px; /* Padding inferior específico para el contenido de hero */
+    /* El padding lateral ya viene de .container */
+}
+
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 700px; /* Limita el ancho del texto para mejor lectura */
+    margin: 0 auto;
+}
+
+/* Título común para las secciones principales */
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    color: #007bff; /* Color azul principal */
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/* Sección de Historia - Contenido dentro del .container */
+.history-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    /* El padding ya viene de la clase .container aplicada directamente a esta sección */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.history-content {
+    flex: 1;
+}
+
+.history-content h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.history-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.history-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.history-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Sección de Misión y Visión - Contenido dentro del .container */
+.mission-vision-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 60px;
+    /* El padding ya viene de la clase .container aplicada directamente a esta sección */
+}
+
+.mission-box, .vision-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Estilos para los títulos h3 que contienen los iconos SVG */
+.mission-box h3, .vision-box h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+    display: flex; /* Usa flexbox para alinear el icono y el texto */
+    align-items: center; /* Centra verticalmente el icono y el texto */
+}
+
+/* Estilos para los iconos SVG dentro de los h3 */
+.mission-box h3 svg,
+.vision-box h3 svg {
+    width: 28px; /* Ancho del icono */
+    height: 28px; /* Alto del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    stroke: #007bff; /* Color del trazo del icono para que coincida con el texto */
+    fill: none; /* Asegura que no tenga relleno, solo trazo */
+    stroke-width: 2; /* Grosor del trazo */
+    flex-shrink: 0; /* Evita que el icono se encoja en pantallas pequeñas */
+}
+
+.mission-box p, .vision-box p {
+    line-height: 1.6;
+}
+
+/* CTA Section - Su fondo abarcará el 100% del ancho del viewport */
+.cta-section {
+    background-color: #007bff; /* Fondo azul */
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 60px;
+
+    /* La magia para el ancho completo del viewport */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+/* Contenedor de contenido dentro de cta-section para gestionar el padding específico */
+.cta-content-container {
+    padding-top: 60px; /* Padding superior específico para el contenido de CTA */
+    padding-bottom: 60px; /* Padding inferior específico para el contenido de CTA */
+    /* El padding lateral ya viene de .container */
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e2e6ea;
+}
+
+/* Adaptaciones Responsivas */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .history-section,
+    .mission-vision-section {
+        flex-direction: column; /* Apila el contenido verticalmente en pantallas pequeñas */
+    }
+
+    /* Ajustar padding para los contenedores en pantallas pequeñas para evitar que el contenido toque los bordes */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Asegurar que el padding horizontal del contenido de las secciones de ancho completo también se ajuste */
+    .hero-content-container,
+    .cta-content-container {
+        padding-left: 15px; /* Ajuste para el padding lateral en móviles */
+        padding-right: 15px; /* Ajuste para el padding lateral en móviles */
+    }
+}
