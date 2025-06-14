@@ -23,9 +23,9 @@
                 <p>Desde nuestros inicios, hemos mantenido nuestro compromiso de proporcionar viajes memorables y un servicio al cliente impecable. Cada hito en nuestro viaje refleja nuestra dedicación a nuestros clientes y a la creación de experiencias de viaje fluidas y enriquecedoras.</p>
             </div>
             <div class="history-image">
-                <img src="https://via.placeholder.com/150x200" alt="TravelEase Product 1">
-                <img src="https://via.placeholder.com/150x200" alt="TravelEase Product 2">
-                <img src="https://via.placeholder.com/150x200" alt="TravelEase Product 3">
+                <img src="../img/featured/cataratas.jpg" width="350px" height= "240px" alt="TravelEase Product 1">
+                <img src="../img/featured/iguazu.jpg" width="350px" height= "240px" alt="TravelEase Product 1">
+                <img src="../img/featured/cordoba_serrana.jpg" width="350px" height= "240px" alt="TravelEase Product 1">
             </div>
         </section>
 
