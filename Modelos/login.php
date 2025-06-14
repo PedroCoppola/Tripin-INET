@@ -36,7 +36,7 @@
             if ($usuario && password_verify($password, $usuario['password'])) {
                 $_SESSION['usuario'] = $usuario['nombre'];
                 $_SESSION['rol'] = $usuario['rol'];
-                header('Location: ../vistas/dashboard.php');
+                header('Location: ../vistas/index.php');
                 exit;
             } else {
                 header('Location: ../vistas/index.php?error=1');

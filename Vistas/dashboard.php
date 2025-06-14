@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablero de </title>
-    <link rel="stylesheet" href="../Estilos/style_dashboard.css">
+    <link rel="stylesheet" href="../Estilos/dashboard.css">
     <style>
         
     </style>

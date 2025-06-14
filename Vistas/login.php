@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tripin - Acceso</title>
-    <link rel="stylesheet" href="../Estilos/style_login.css">
+    <link rel="stylesheet" href="../Estilos/login.css">
 </head>
 <body>
 

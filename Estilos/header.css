@@ -1,10 +1,12 @@
 /* header.css */
 
-.main-header {
+
+
+header {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
     padding: 10px 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -90,4 +92,44 @@
     display: flex;
     align-items: center;
     gap: 20px; /* Espacio entre links y botones */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    border: none;
+    margin: 2px 0;
+}
+
+#carrito:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#logout:hover {
+    background-color: #ff6b6b;
+    color: #fff;
 }

@@ -36,7 +36,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($producto['nombre']); ?> - Tripin</title>
-    <link rel="stylesheet" href="../Estilos/style_paginaviaje.css">
+    <link rel="stylesheet" href="../Estilos/paginaviaje.css">
 </head>
 <body>
     <?php include 'header.php'; ?>
@@ -70,15 +70,15 @@ try {
                             <path d="M21 6.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0zM2 4v2h1.42l3.58 7-1.35 2.44A2 2 0 0 0 7.92 19H19v-2H8.42a.25.25 0 0 1-.23-.36L9.1 14h7.45a2 2 0 0 0 1.84-1.21l2.2-5.05a.5.5 0 0 0-.47-.74H5.21L4.27 4H2z"/>
                         </svg>Comprar ahora
                     </button>
+<form method="POST" action="../Modelos/agregar_carrito.php">
+    <input type="hidden" name="id" value="<?php echo $producto['id']; ?>">
+    <input type="hidden" name="nombre" value="<?php echo htmlspecialchars($producto['nombre']); ?>">
+    <input type="hidden" name="precio" value="<?php echo $precio_final; ?>">
+    <input type="hidden" name="imagen" value="<?php echo htmlspecialchars($producto['imagen']); ?>">
+    <button type="submit" class="add-to-wishlist-button">🛒 Agregar al carrito</button>
+</form>
 
-                    <button class="add-to-wishlist-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffffff" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;">
-                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 
-                            0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 14l.84-2h7.45a2 2 
-                            0 0 0 1.84-1.21l3.24-7.49A.5.5 0 0 0 20.5 3H5.21l-.94-2H0v2h2l3.6 7.59-1.35 
-                            2.44A2 2 0 0 0 6.42 17H19v-2H7.16z"/>
-                        </svg>Agregar al carrito
-                    </button>
+
                 </div>
             </div>
         </section>

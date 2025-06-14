@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tripin</title>
-    <link rel="stylesheet" href="../Estilos/style_index.css" />
+    <link rel="stylesheet" href="../Estilos/index.css" />
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     <div class="banner-content">
         <h1>¡Explora el mundo con Tripin!</h1>
         <p>Descubre paquetes de viaje seleccionados a los destinos más impresionantes. Tu aventura te espera.</p>
-        <button>Encuentra un viaje</button>
+        <button onclick="window.location='explore-trips.php';">Encuentra un viaje</button>
     </div>
 </header>
 

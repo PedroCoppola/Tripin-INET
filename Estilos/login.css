@@ -4,7 +4,7 @@ body {
         background: radial-gradient(circle at center, #ffffff 0%, #f7fbfe 40%, #e1f1fd 100%);
 
     background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

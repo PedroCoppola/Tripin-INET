@@ -9,15 +9,29 @@
 </head>
 <body>
 
+    <?php
+    function resolveLink($filename) {
+        if (file_exists(__DIR__ . '/' . $filename)) {
+            return $filename;
+        } elseif (file_exists(__DIR__ . '/../Vistas/' . $filename)) {
+            return '../Vistas/' . $filename;
+        } else {
+            return $filename; // fallback
+        }
+    }
+    ?>
     <footer class="footer">
         <div class="footer-links">
-            <a href="sobrenosotros.php">Nosotros</a>
-            <a href="contacto.php">Contacto</a>
-            <a href="polypriv.php">Políticas De Privacidad</a>
-            <a href="termyserv.php">Terminos De Servicio</a>
+            <a href="<?php echo resolveLink('sobrenosotros.php'); ?>">Nosotros</a>
+            <a href="<?php echo resolveLink('contacto.php'); ?>">Contacto</a>
+            <a href="<?php echo resolveLink('polypriv.php'); ?>">Políticas De Privacidad</a>
+            <a href="<?php echo resolveLink('termyserv.php'); ?>">Terminos De Servicio</a>
         </div>
         <div class="footer-social">
-            <a href="#"><i class="fas fa-arrow-up"></i></a> <a href="#"><i class="fas fa-th-list"></i></a> <a href="#"><i class="fas fa-info-circle"></i></a> </div>
+            <a href="#"><i class="fas fa-arrow-up"></i></a>
+            <a href="#"><i class="fas fa-th-list"></i></a>
+            <a href="#"><i class="fas fa-info-circle"></i></a>
+        </div>
         <div class="footer-copyright">
             ©2025 Tripin. All rights reserved.
         </div>
